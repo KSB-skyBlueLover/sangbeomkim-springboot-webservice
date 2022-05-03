@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.tags.Param;
 
 @RestController
+@RequestMapping("/v1/api")
 public class HelloController {
 
 
@@ -23,8 +24,8 @@ public class HelloController {
             @RequestParam(value = "var2") String var2) {
 
         Test2Arg test2Arg = new Test2Arg();
-        test2Arg.setString1(var2);
-        test2Arg.setString2(var1);
+        test2Arg.setVar1(var2);
+        test2Arg.setVar2(var1);
 
         return test2Arg;
     }

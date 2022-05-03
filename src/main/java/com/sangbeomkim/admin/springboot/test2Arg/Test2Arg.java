@@ -6,7 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Test2Arg{
-    private String string1;
-    private String string2;
+    private String var1;
+    private String var2;
 
 }
